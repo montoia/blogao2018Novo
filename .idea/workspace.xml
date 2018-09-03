@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba781287-a8da-4093-83c7-c7a0618b9624" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/post.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/post.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/_form.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/posts/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20180903212800_add_categoty_id_to_posts.rb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -35,27 +33,27 @@
         <counts>
           <entry key="erb" value="28" />
           <entry key="jbuilder" value="7" />
-          <entry key="rb" value="17" />
+          <entry key="rb" value="20" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="RHTML" value="28" />
-          <entry key="Ruby" value="24" />
+          <entry key="Ruby" value="27" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="erb" value="274" />
+          <entry key="erb" value="304" />
           <entry key="rb" value="178" />
           <entry key="yml" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="RHTML" value="274" />
+          <entry key="RHTML" value="304" />
           <entry key="Ruby" value="178" />
           <entry key="YAML" value="19" />
         </counts>
@@ -64,20 +62,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="71" column="67" selection-start-line="71" selection-start-column="56" selection-end-line="71" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/post.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="285">
+              <caret line="39" column="22" lean-forward="true" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -85,8 +74,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="330">
+              <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/category.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -94,10 +92,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/posts/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="315">
+              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20180903220024_add_categoty_id_to_posts.rb">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -114,12 +117,13 @@
         <option value="$PROJECT_DIR$/db/migrate/20180903204949_add_author_id_to_posts.rb" />
         <option value="$PROJECT_DIR$/app/models/author.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/posts/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/posts/show.html.erb" />
         <option value="$PROJECT_DIR$/app/models/category.rb" />
         <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/posts/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/posts/index.html.erb" />
         <option value="$PROJECT_DIR$/app/models/post.rb" />
+        <option value="$PROJECT_DIR$/app/views/posts/_form.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20180903212800_add_categoty_id_to_posts.rb" />
       </list>
     </option>
   </component>
@@ -353,12 +357,12 @@
       <option name="presentableId" value="Default" />
       <updated>1535757203216</updated>
       <workItem from="1535757204383" duration="1922000" />
-      <workItem from="1536006588018" duration="4590000" />
+      <workItem from="1536006588018" duration="5570000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6512000" />
+    <option name="totallyTimeSpent" value="7492000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -437,9 +441,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20180903212800_add_categoty_id_to_posts.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20180903212625_create_categories.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -466,13 +467,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/categories/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/author.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -487,26 +481,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/posts/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/post.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="45">
+          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="71" column="67" selection-start-line="71" selection-start-column="56" selection-end-line="71" selection-end-column="67" />
+        <state relative-caret-position="285">
+          <caret line="39" column="22" lean-forward="true" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180903212800_add_categoty_id_to_posts.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180903220024_add_categoty_id_to_posts.rb">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

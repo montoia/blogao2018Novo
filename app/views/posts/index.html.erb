@@ -20,6 +20,7 @@
         <td><%= post.subject %></td>
         <td><%= post.text %></td>
         <td><%= post.author.name %></td>
+        <td><%= post.category.description unless post.category.nil? %></td>
         <td><%= link_to 'Mostrar', post %></td>
         <td><%= link_to 'Editar', edit_post_path(post) %></td>
         <td><%= link_to 'Apagar', post, method: :delete, data: { confirm: 'Deseja apagar?' } %></td>
