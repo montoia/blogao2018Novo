@@ -12,6 +12,16 @@
   <% end %>
 
   <div class="field">
+    <%= form.label :author_id %>
+    <%= form.select :author_id, Author.all.collect { | author| [author.name, author.id]} %>
+  </div>
+
+  <div class="field">
+    <%= form.label :category_id %>
+    <%= form.select :category_id, Category.all.collect { | category| [category.description, category.id]} %>
+  </div>
+
+  <div class="field">
     <%= form.label :title %>
     <%= form.text_field :title %>
   </div>
