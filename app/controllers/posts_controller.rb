@@ -7,6 +7,12 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
+  def homepage
+    #@posts = Post.order('created_at desc')
+    @posts = Post.recents.order('created_at desc')
+    #byebug comando que serve como breakpoint
+  end
+
   # GET /posts/1
   # GET /posts/1.json
   def show
