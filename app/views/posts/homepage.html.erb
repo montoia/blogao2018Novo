@@ -2,12 +2,13 @@
 
 <h1>Homepage</h1>
 
-<% @posts.each do | post | %>
-  <h2> Title: <%= post.title %></h2>
-  <h2> Subject: <%= post.subject %></h2>
-  <h2> Text: <%= post.text %></h2>
+<% @posts.each do |post| %>
+  <h2>Title: <%= post.title %></h2>
+  <h3>Subject: <%= post.subject %></h3>
+  <h4>Text: <%= splitDescription post.text %></h4>
   <strong><%= post.author.name %></strong>
-  <small><%= post.created_at %> </small>
+  <small><%= post.created_at %></small>
+
   <hr/>
 <% end %>
 

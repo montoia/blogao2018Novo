@@ -10,8 +10,9 @@
   </head>
 
   <body>
-    <%= render '/layouts/menu' %>
-    <%= yield %>
-    <%= render '/layouts/footer' %>
+   <%= render '/layouts/menu' %>
+   <div class="container-fluid">
+     <%= yield %>
+   </div>
   </body>
 </html>
