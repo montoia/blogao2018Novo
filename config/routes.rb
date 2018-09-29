@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :posts do
     collection do
       get 'homepage' # definindo a rota da homepage
+      post 'homepage'
     end
   end
 

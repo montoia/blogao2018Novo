@@ -10,7 +10,13 @@ class PostsController < ApplicationController
   def homepage
     #@posts = Post.order('created_at desc')
     @posts = Post.recents.order('created_at desc')
-    #byebug comando que serve como breakpoint
+
+    # filtragem por categoria
+    @posts = @posts.where(category_id: params[:category_id]) unless params[:category_id].blank?
+    # uso do unless params[:category_id].blank? para exibir somente se não for vazio
+
+    ## fazer o busca por termos
+    @posts = @posts.where('UPPER(text) LIKE ?', "%#{params[:term].upcase}%") unless params[:term].blank?
   end
 
   # GET /posts/1
