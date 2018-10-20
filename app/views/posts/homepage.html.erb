@@ -7,6 +7,7 @@
   <h2>Title: <%= post.title %></h2>
   <h3>Subject: <%= post.subject %></h3>
   <h4>Text: <%= splitDescription post.text %></h4>
+     <%= image_tag post.author.photo.thumb.url unless post.author.photo.file.nil? %>
   <strong><%= post.author.name %></strong>
   <small><%= post.created_at %></small>
   <hr/>

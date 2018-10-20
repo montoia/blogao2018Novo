@@ -4,5 +4,5 @@ class Post < ApplicationRecord
   belongs_to :author
   belongs_to :category
 
-  scope :recents, -> {where('created_at > ?', (Time.now.beginning_of_day - 9.days))}
+  scope :recents, -> {where('created_at > ?', (Time.now.beginning_of_day - 29.days))}
 end
