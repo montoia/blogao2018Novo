@@ -1,0 +1,10 @@
+        String SQL_TIPO = "CREATE TABLE tipo( tipo_id integer not null primary key, descricao varchar(20) not null)";
+        String SQL_ESTADO = "CREATE TABLE estado( estado_id integer not null primary key, descricao varchar(20) not null)";
+        String SQL_CIDADE = "CREATE TABLE cidade( cidade_id integer not null primary key, descricao varchar(20) not null,"+
+                            "estado_id integer not null, FOREIGN KEY(estado_id) REFERENCES estado(estado_id))";
+
+        String SQL_CLIENTE = "CREATE TABLE cliente( cliente_id integer not null primary key, " +
+                            "cnpj varchar(20) not null, razao_social varchar(200), " +
+                            "fantasia varchar(200), telefone varchar(20), email varchar(50),"+
+                            "tipo_id integer not null, cidade_id integer not null, cidade_estado_id integer not null," +
+                            "FOREIGN KEY(tipo_id) REFERENCES tipo(tipo_id), FOREIGN KEY(cidade_id, cidade_estado_id) REFERENCES cidade(cidade_id, estado_id))";
